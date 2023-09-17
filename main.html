@@ -1,16 +1,44 @@
 <!DOCTYPE html>
 
 <html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      #flex {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+      }
 
-<head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: green;
+        font-size: xx-large;
+      }
 
-<body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+      #red {
+        background-color: red;
+        order: 1;
+      }
 
-</body>
+      #blue {
+        background-color: blue;
+        order: 2;
+      }
+    </style>
+  </head>
 
+  <body>
+    <!-- the entire body must be written by student -->
+
+    <div id="flex">
+      <div id="red" class="box">1</div>
+      <div id="blue" class="box">2</div>
+      <div class="box">3</div>
+    </div>
+
+    <script type="text/javascript" src="./script.js"></script>
+  </body>
 </html>
